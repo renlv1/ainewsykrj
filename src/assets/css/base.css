@@ -1,0 +1,59 @@
+.bg-class {
+    height: 1240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: auto;
+}
+.contents {
+  font-size: 18px !important;
+}
+.contents p img{
+  display: inline-block !important;
+  margin-top: 10px !important;
+  width: 500px !important;
+  height: 280px !important;
+}
+.contents p span{
+  margin-top: 10px !important;
+  line-height: 1.5 !important;
+}
+.contents p video{
+  margin-right: 4px !important;
+  position: relative !important;
+  background-color: #000 !important;
+  z-index: 0 !important;
+}
+@media (max-width: 768px) {
+  .contents p img{
+    width: 100% !important;
+    height: 190px !important;
+  }
+  .contents p video{
+    width: 100% !important;
+  }
+}
+@media (max-width: 1200px) {
+    .mobile {
+        display: block;
+    }
+
+    .pc {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mobile {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+}
+.swiper-button-next, .swiper-button-prev {
+    background-size: 14px 22px !important;
+    top: 37% !important;
+    background-color: rgba(255, 255, 255, .1);
+}

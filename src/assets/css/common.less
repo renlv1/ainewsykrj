@@ -1,0 +1,171 @@
+
+.ios{
+  .app-header{
+    padding-top: 20px;
+    .back{
+      top: 20px;
+    }
+  }
+  .main-container{
+    padding-top: 64px;
+    .total{
+      &:before{
+        top: -64px;
+      }
+    }
+  }
+}
+.iosx{
+  .app-header{
+    padding-top: 44px;
+    .back{
+      top: 44px;
+    }
+  }
+  .main-container{
+    padding: 88px 0 40px;
+    .total{
+      &:before{
+        top: -88px;
+      }
+    }
+  }
+  .footer{
+    height: 1.6rem;
+  }
+  .fixed-btn{
+    bottom: 30px;
+  }
+}
+.fixed-btn{
+  background: #3495f1;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 0.88rem;
+  font-size: 0.32rem;
+  color: #fff;
+  z-index: 999;
+  &:active{
+    background: #2781d7;
+  }
+  &:disabled{
+    background: #bbb !important;
+  }
+}
+.gap{
+  padding: 0 0.3rem;
+}
+.c999{
+  color: #999;
+}
+.cblue{
+  color: #3495f1;
+}
+.justify(@align:space-between){
+  display: flex;
+  justify-content: @align;
+}
+.justify{
+  .justify();
+}
+.c-page{
+  img{
+    max-width: 100%;
+    vertical-align: top;
+  }
+}
+.web-list{
+  background: #fff;
+  padding-left: 0.3rem;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 0.3rem;
+  .item{
+    display: flex;
+    align-items: center;
+    .text{
+      flex: 1;
+      padding-right: 0.24rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    & +.item .text{
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+}
+
+.empty-data{
+  margin-top: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: .28rem;
+  color: #060f26;
+  padding-bottom: .5rem;
+  .noData{
+    width: 2.32rem;
+    height: 2.3rem;
+    margin-left: .5rem;
+    margin-bottom: .2rem;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  height: 1rem;
+  color: #bdbdbd;
+  ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  li{
+    flex: 1;
+    padding: .2rem 0 .14rem;
+    line-height: 1;
+    .normal{
+      display: inline-block;
+    }
+    .active{
+      display: none;
+    }
+    &.router-link-active{
+      color: #2283e6;
+      .active{
+        display: inline-block;
+      }
+      .normal{
+        display: none;
+      }
+    }
+  }
+  img{
+    width: 0.36rem;
+    height: 0.36rem;
+    vertical-align: top;
+  }
+  p{
+    padding-top: 0.1rem;
+    font-size: .2rem;
+  }
+}
+.ell{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
